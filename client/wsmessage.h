@@ -1,15 +1,12 @@
 #pragma once
 
-#include <QString>
+#include <QDebug>
 
+// This class is responsible for storing temporary message data needed for attempting to resend the message in case of failure.
 class WsMessage {
 public:
-    WsMessage(qlonglong createdAt, QString message, QString tempId);
-    qlonglong getCreatedAt();
-    QString getMessage();
-    QString getTempId();
+    WsMessage(QJsonObject content);
+    QJsonObject getContent();
 private:
-    qlonglong createdAt;
-    QString tempId;
-    QString message;
+    QJsonObject content;
 };

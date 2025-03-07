@@ -52,7 +52,7 @@ color: rgb(224, 255, 255);</string>
      </rect>
     </property>
     <property name="currentIndex">
-     <number>2</number>
+     <number>3</number>
     </property>
     <widget class="QWidget" name="signPage">
      <widget class="QFrame" name="signWrap">
@@ -101,7 +101,7 @@ border-radius: 3px;</string>
         <set>Qt::AlignCenter</set>
        </property>
       </widget>
-      <widget class="QPushButton" name="toSignInButton">
+      <widget class="QPushButton" name="goToSignInButton">
        <property name="geometry">
         <rect>
          <x>25</x>
@@ -124,7 +124,7 @@ border-radius: 3px;
         <string>in</string>
        </property>
       </widget>
-      <widget class="QPushButton" name="toSignUpButton">
+      <widget class="QPushButton" name="goToSignUpButton">
        <property name="geometry">
         <rect>
          <x>25</x>
@@ -628,7 +628,7 @@ border-radius: 3px;</string>
         <string>✈</string>
        </property>
       </widget>
-      <widget class="QLabel" name="currentChat">
+      <widget class="QLabel" name="currentChatName">
        <property name="geometry">
         <rect>
          <x>10</x>
@@ -744,7 +744,7 @@ border-radius: 3px;</string>
        </widget>
       </widget>
      </widget>
-     <widget class="QPushButton" name="toCreateGroupPageButton">
+     <widget class="QPushButton" name="goToCreateGroupPageButton">
       <property name="enabled">
        <bool>true</bool>
       </property>
@@ -804,7 +804,7 @@ border: none;</string>
        <bool>true</bool>
       </property>
      </widget>
-     <widget class="QPushButton" name="backToSignInButton">
+     <widget class="QPushButton" name="backToSignButton">
       <property name="enabled">
        <bool>true</bool>
       </property>
@@ -924,7 +924,7 @@ border-radius: 3px;
         <string>Create</string>
        </property>
       </widget>
-      <widget class="QLineEdit" name="createGroupLineEdit">
+      <widget class="QLineEdit" name="groupNameLineEdit">
        <property name="geometry">
         <rect>
          <x>10</x>
@@ -999,32 +999,6 @@ border: none;
         <set>Qt::AlignCenter</set>
        </property>
       </widget>
-     </widget>
-    </widget>
-    <widget class="QWidget" name="waitingPage">
-     <widget class="QLabel" name="waitingLabel">
-      <property name="geometry">
-       <rect>
-        <x>800</x>
-        <y>510</y>
-        <width>320</width>
-        <height>60</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <pointsize>24</pointsize>
-       </font>
-      </property>
-      <property name="text">
-       <string>Initializing...</string>
-      </property>
-      <property name="alignment">
-       <set>Qt::AlignCenter</set>
-      </property>
-      <property name="wordWrap">
-       <bool>true</bool>
-      </property>
      </widget>
     </widget>
    </widget>

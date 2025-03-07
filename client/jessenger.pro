@@ -1,4 +1,4 @@
-QT       += core gui network websockets
+QT       += core gui network websockets sql
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 CONFIG += c++17
@@ -8,25 +8,27 @@ CONFIG += c++17
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-    authorizationfilemanager.cpp \
-    cachefilemanager.cpp \
+    cachingmanager.cpp \
+    chatpushbutton.cpp \
+    httpclient.cpp \
     messagewidget.cpp \
-    userpushbutton.cpp \
-    authorizationmanager.cpp \
     main.cpp \
     mainwindow.cpp \
     networkclient.cpp \
-    wsmessage.cpp
+    persistenttokenstorage.cpp \
+    ramtokenstorage.cpp \
+    wsclient.cpp
 
 HEADERS += \
-    authorizationfilemanager.h \
-    cachefilemanager.h \
+    cachingmanager.h \
+    chatpushbutton.h \
+    httpclient.h \
     messagewidget.h \
-    userpushbutton.h \
-    authorizationmanager.h \
     mainwindow.h \
     networkclient.h \
-    wsmessage.h
+    persistenttokenstorage.h \
+    ramtokenstorage.h \
+    wsclient.h
 
 FORMS += \
     mainwindow.ui
